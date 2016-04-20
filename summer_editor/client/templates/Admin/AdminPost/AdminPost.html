@@ -1,0 +1,29 @@
+<template name="AdminPost">
+	<div class="col-xs-12">
+		<table class="table table-hover">
+			<thead>
+				<tr class="row">
+					<th>Title</th>
+					<th>Action</th>
+					<th>Post Message</th>
+					<th>Post Body</th>
+					<th>Post CreatedAt</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each posts}}
+					<tr class="row">
+						<td>{{Title}}</td>
+							<td>
+							<button class="btn btn-danger" id="deletePost">Delete</button> 
+							<button class="btn btn-warning" id="editPost">Edit</button>
+							</td>
+						<td>{{Message}}</td>
+						<td>{{{Body}}}</td>
+						<td>{{CreatedAt}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>

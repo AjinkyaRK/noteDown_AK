@@ -1,0 +1,20 @@
+<template name="ShowNotes">
+	<div class="col-xs-12">
+		{{#each posts}}
+			{{>ShowNote}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="ShowNote">
+		<div class="col-xs-12 col-md-6 col-lg-4">
+			<div class="thumbnail">
+				<h2 class="text-center text-capitalize ">{{Title}}</h2>
+				<p class="text-center">{{Message}}</p>
+				<button class="btn btn-default center-block" id="readMore">
+					<span class="glyphicon glyphicon-file">
+					</span> Read More!
+				</button>
+			</div>		
+		</div>
+</template>
