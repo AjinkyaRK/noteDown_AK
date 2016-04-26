@@ -2,7 +2,7 @@ Template.AddComment.events({
 	'submit #addCommentForm' : function (event, template) {
 		event.preventDefault();
 
-		var message = event.target.AddComment.value;
+		var message = event.target.addComment.value;
 		//get postId
 		var postId = template.data._id;
 
